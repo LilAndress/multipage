@@ -1,0 +1,19 @@
+---
+const {isRed = false } = Astro.props
+---
+
+<a href="#" class="inline-flex h-8 space-x-1 rounded items-center transition-colors  px-2  bg-blue-500 text-white"
+  class:list={{"bg-red-500 hover:bg-red-600":isRed}}
+>
+   
+   
+   
+    <slot name="start-icon"/> 
+    <slot name="text">
+   <span>
+     Soy un boton
+    </span>
+</slot>
+<slot name="end-icon"/>
+   
+</a>
