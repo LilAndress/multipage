@@ -1,8 +1,26 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import {Icon} from 'astro-icon/components';
 ---
 
 <Layout title="Bienvenidos a mi pagina">
+
+    <div class="my-custom-class">
+        asdasa
+    </div>
+
+    <span class="font-myfont text-2xl italic">Hola mundo como estan</span> 
+    <span class="font-myfont text-2xl bg-green-500 rounded-t-[60%] ">Hola mundo como estan</span> 
+
+    <Icon name="mdi:progress-upload" size="45" class="text-blue-600"/>
                               
 </Layout>
+
+<style >
+
+    .my-custom-class{
+        @apply bg-red-600 text-white text-2xl
+
+
+    }
+</style>
