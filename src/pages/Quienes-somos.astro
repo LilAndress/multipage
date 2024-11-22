@@ -1,10 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import MyComponent from "../components/vue/MyComponent.vue";
 ---
 
 
 <Layout title="Acá te contamos quienes somos">
 
 Esta es la pagina de Quienes somos
+<MyComponent client:load></MyComponent>
 
 </Layout>
